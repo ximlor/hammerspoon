@@ -60,9 +60,9 @@ end)                  :start()
 
 -- 自动重载
 -- 加个计时器 防止频繁加载
-hs.timer.delayed.new(1 * 60, function()
-    myWatcher = hs.pathwatcher.new(os.getenv('HOME') .. '/.hammerspoon/', reload):start()
-end):start()
+-- hs.timer.delayed.new(1 * 60, function()
+--     myWatcher = hs.pathwatcher.new(os.getenv('HOME') .. '/.hammerspoon/', reload):start()
+-- end):start()
 
 --[[
 -- TODO:
