@@ -13,7 +13,6 @@ key2App = {
     f = 'Finder',
     o = 'Obsidian',
     w = 'WPS Office',
-    n = 'Google Chrome Canary',
 }
 
 -- 自动切换中文输入法app
@@ -31,10 +30,11 @@ appMethods = {
     ['com.yinxiang.Mac'] = 1,
     ['md.obsidian'] = 1,
 }
-cnMethod = '搜狗拼音'
+cnMethod = '微信输入法'
+cnMethod_sogou = '搜狗拼音'
 enMethod = 'U.S.'
 
--- 忽略的app，不做自动切换中文输入法
+-- TODO: 改用正则匹配
 appIgnore = {
     ['com.apple'] = 1,
     ['org.hammerspoon'] = 1,
