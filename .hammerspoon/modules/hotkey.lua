@@ -30,18 +30,19 @@ hotkey.bind(hyper, 'Left', function()
     hs.window:moveOneScreenWest()
 end)
 
-local keepTap = true
-hotkey.bind(hyper, '=', function()
-    if (not keepTap)
-    then
-        keepTap = true
-    end
-    hs.timer.doWhile(function()
-        return keepTap
-    end, function()
-        hs.eventtap.keyStroke(nil, "pagedown", 200000)
-    end, 0.1)
-end)
-hotkey.bind(hyper, '-', function()
-    keepTap = false
-end)
+-- 无限翻页，按住=键，松开-键
+-- local keepTap = true
+-- hotkey.bind(hyper, '=', function()
+--     if (not keepTap)
+--     then
+--         keepTap = true
+--     end
+--     hs.timer.doWhile(function()
+--         return keepTap
+--     end, function()
+--         hs.eventtap.keyStroke(nil, "pagedown", 200000)
+--     end, 0.1)
+-- end)
+-- hotkey.bind(hyper, '-', function()
+--     keepTap = false
+-- end)
