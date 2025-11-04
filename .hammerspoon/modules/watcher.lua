@@ -37,26 +37,27 @@ appWatcher = hs.application.watcher.new(function(name, event, app)
     end
 end)           :start()
 
-caffeinateWatcher = hs.caffeinate.watcher.new(function(event)
-    --    hs.printf(event)
+-- 监听屏幕状态
+-- caffeinateWatcher = hs.caffeinate.watcher.new(function(event)
+--     --    hs.printf(event)
 
-    --[[
-        The order when the display is close:
-        systemWillSleep   1
-        screensDidSleep   3
-        screensDidLock    10
-        screensDidWake    4
-        systemDidWake     0
-        screensDidUnlock  11
-    --]]
+--     --[[
+--         The order when the display is close:
+--         systemWillSleep   1
+--         screensDidSleep   3
+--         screensDidLock    10
+--         screensDidWake    4
+--         systemDidWake     0
+--         screensDidUnlock  11
+--     --]]
 
-    if event == hs.caffeinate.watcher.screenDidSleep then
-        appWatcher:stop()
-    elseif event == hs.caffeinate.watcher.screenDidWake then
-        appWatcher:start()
-        reload()
-    end
-end)                  :start()
+--     if event == hs.caffeinate.watcher.screenDidSleep then
+--         appWatcher:stop()
+--     elseif event == hs.caffeinate.watcher.screenDidWake then
+--         appWatcher:start()
+--         reload()
+--     end
+-- end)                  :start()
 
 -- 自动重载
 -- 加个计时器 防止频繁加载
