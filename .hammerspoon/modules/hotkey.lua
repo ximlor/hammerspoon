@@ -2,7 +2,7 @@ local hotkey = require 'hs.hotkey'
 local application = require 'hs.application'
 
 -- 重新加载
-hotkey.bind(hyper, 'escape', reload)
+-- hotkey.bind(hyper, 'escape', reload)
 
 -- 打开控制台
 hotkey.bind(hyper, '`', console)
