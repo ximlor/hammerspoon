@@ -13,6 +13,7 @@ key2App = {
     f = 'Finder',
     o = 'Obsidian',
     w = 'wpsoffice',
+    p = 'TencentDocs',
 }
 -- 上面的应用大部分都可以使用应用名称，但个别应用（如 wps）需要与 ~/applications 中的应用名称一致
 
@@ -30,6 +31,7 @@ appMethods = {
     ['com.kingsoft.wpsoffice.mac'] = 1,
     ['com.yinxiang.Mac'] = 1,
     ['md.obsidian'] = 1,
+    ['com.tencent.txdocs'] = 1,
 }
 cnMethod = '微信输入法'
 cnMethod_sogou = '搜狗拼音'
