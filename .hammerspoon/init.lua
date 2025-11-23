@@ -7,13 +7,12 @@ hyperShift = { 'ctrl', 'alt', 'cmd', 'shift' }
 
 key2App = {
     b = 'Google Chrome',
-    d = 'Visual Studio Code',
+    k = 'Visual Studio Code',
     i = 'iTerm',
     e = '印象笔记',
     f = 'Finder',
     o = 'Obsidian',
     w = 'wpsoffice',
-    p = 'TencentDocs',
 }
 -- 上面的应用大部分都可以使用应用名称，但个别应用（如 wps）需要与 ~/applications 中的应用名称一致
 
